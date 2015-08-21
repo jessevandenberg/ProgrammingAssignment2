@@ -16,8 +16,9 @@ makeCacheMatrix <- function(x = numeric()) {
        getsolve = getsolve)
 }
 
-
-## Write a short comment describing this function
+## Checking if the inverse matrix is already calculated and
+## and stored in the cache. If so, then returns the cached value
+## if not, calculate the inverse matrix
 
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
